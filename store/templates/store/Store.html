@@ -1,0 +1,92 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicadores -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!--Embalagem para slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src=" {% static 'images/personalizados.jpg' %}" alt="New York" width="1000" height="850">
+        <div class="carousel-caption">
+          <h3>Faça já o seu pedido!</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="{% static 'images/novidades.jpg' %}" alt="Chicago" width="1000" height="850">
+        <div class="carousel-caption">
+          <h3>fique ligado e aguarde</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="{% static 'images/promo.jpg' %}" alt="Los Angeles" width="1000" height="850">
+        <div class="carousel-caption">
+          <h3>Michael</h3>
+          <p>Joseph jackson!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles esquerdo e direito -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+</div>
+
+
+	<div class="row">
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{% static 'images/2_placeholder.png' %}">
+			<div class="box-element product">
+				<h6><strong>PRODUTOS</strong></h6>
+				<hr>
+
+				<button  class="btn btn-outline-secondary add-btn">Adicionar ao Carrinho</button>
+				<a class="btn btn-outline-success" href="#">Visualizar</a>
+				<h4 style="display: inline-block; float: right"><strong>R$20,00</strong></h4>
+
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{% static 'images/2_placeholder.png' %}">
+			<div class="box-element product">
+				<h6><strong>PRODUTOS</strong></h6>
+				<hr>
+
+				<button  class="btn btn-outline-secondary add-btn">Adicionar ao Carrinho</button>
+				<a class="btn btn-outline-success" href="#">Visualizar</a>
+				<h4 style="display: inline-block; float: right"><strong>R$35,00</strong></h4>
+
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+			<img class="thumbnail" src="{% static 'images/2_placeholder.png' %}">
+			<div class="box-element product">
+				<h6><strong>PRODUTOS</strong></h6>
+				<hr>
+
+				<button  class="btn btn-outline-secondary add-btn">Adicionar ao Carrinho</button>
+				<a class="btn btn-outline-success" href="#">Visualizar</a>
+				<h4 style="display: inline-block; float: right"><strong>R$40,00</strong></h4>
+
+			</div>
+		</div>
+	</div>
+
+{% endblock content %}
